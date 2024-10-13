@@ -9,6 +9,8 @@ import deleteFile from "../filesOperations/delete.js";
 import moveFiles from "../filesOperations/moveFiles.js";
 import osNavigate from "../os/navigate.js";
 import calcHash from "../hash/hash.js";
+import compress from "../compressDecompress/compress.js";
+import decompress from "../compressDecompress/decompress.js";
 
 const catalog = {
     up: goUp,
@@ -22,6 +24,8 @@ const catalog = {
     rm: deleteFile,
     os: osNavigate,
     hash: calcHash,
+    compress: compress,
+    decompress: decompress
 }
 
 export default catalog;

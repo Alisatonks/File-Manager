@@ -7,6 +7,7 @@ import rename from "../filesOperations/rename.js";
 import copy from "../filesOperations/copy.js";
 import deleteFile from "../filesOperations/delete.js";
 import moveFiles from "../filesOperations/moveFiles.js";
+import osNavigate from "../os/navigate.js";
 
 const catalog = {
     up: goUp,
@@ -18,6 +19,7 @@ const catalog = {
     cp: copy,
     mv: moveFiles,
     rm: deleteFile,
+    os: osNavigate,
 }
 
 export default catalog;

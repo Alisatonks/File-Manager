@@ -8,6 +8,7 @@ import copy from "../filesOperations/copy.js";
 import deleteFile from "../filesOperations/delete.js";
 import moveFiles from "../filesOperations/moveFiles.js";
 import osNavigate from "../os/navigate.js";
+import calcHash from "../hash/hash.js";
 
 const catalog = {
     up: goUp,
@@ -20,6 +21,7 @@ const catalog = {
     mv: moveFiles,
     rm: deleteFile,
     os: osNavigate,
+    hash: calcHash,
 }
 
 export default catalog;

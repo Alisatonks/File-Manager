@@ -22,7 +22,12 @@ const createReadLine = () => {
         if(command === '.exit') {
             rl.close();
         } else {
-            await catalog[command](trimmedArgs);
+            if(catalog[command]) {
+               await catalog[command](trimmedArgs);  
+            } else {
+                console.error('Invalid Input')
+            }
+           
             printCurrentDir(process.cwd());
             rl.prompt();
         }
